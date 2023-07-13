@@ -1,0 +1,17 @@
+<div class="container mt-4">
+    <h3>Customer Panel</h3>
+    <div class="card">
+        <h4>Add customer</h4>
+        <form>
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" [(ngModel)]="customername" [ngModelOptions]="{standalone: true}" id="name" class="form-control" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <label>Mobile:</label>
+                <input type="text" [(ngModel)]="mobile" [ngModelOptions]="{standalone: true}" id="mobile" class="form-control" placeholder="Enter phone number">
+            </div>
+            <button type="submit" class="btn btn-success" (click)="save()">Add</button>
+        </form>
+    </div>      
+</div>
